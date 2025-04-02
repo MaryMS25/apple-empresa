@@ -1,0 +1,93 @@
+/* variavel para as cores */
+
+:root {
+    --background-color: rgba(39, 39, 39, 0.9); /* Fundo escuro suave */
+
+    --fundo-menu-lateral: #19191a; /* Preto acinzentado para contraste */
+    --fundo-claro: #c9b977; /* Dourado suave para equilíbrio */
+    --fundo-escuro: #373739; /* Cinza escuro refinado */
+
+    --borda-clara: #ecdda2; /* Dourado claro para detalhes elegantes */
+    --borda-escura: #c9b977; /* Bege dourado para realce */
+
+    --texto-escuro: #020202; /* Preto absoluto para maior contraste */
+    --texto-claro: #ecdda2; /* Bege claro para boa legibilidade */
+    --texto-branco: #ffffff;
+    --texto-hover: #c9b977; /* Dourado suave para efeito hover */
+    --texto-opaco: #737373; /* Cinza médio para texto secundário */
+
+    --cor-detalhes: #c9b977; /* Dourado elegante para elementos decorativos */
+
+    --texto-titulo-claro: #ecdda2; /* Bege claro para títulos chamativos */
+    --texto-titulo-escuro: #373739; /* Cinza escuro para profundidade */
+
+    --sombra-clara: rgba(236, 221, 162, 0.4); /* Sombra dourada suave */
+    --sombra-escura: rgba(25, 25, 26, 0.6); /* Sombra escura para contraste */
+}
+
+/* CSS Geral */
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--texto-claro);
+    background: var(--fundo-escuro);
+}
+
+
+/* cabeçalho */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: var(--fundo-menu-lateral);
+    padding: 0 15px;
+    overflow-y: auto;
+    z-index: 99;
+    transition: all ease-in-out 0,5s;
+}
+
+#header .perfil img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 2px solid var(--borda-clara);
+    box-sizing: 0 0 5px var(--sombra-clara);
+}
+
+#header .perfil h1 {
+    font-size: 24px;
+    margin: 25px;
+    padding: 0;
+    font-weight: 600;
+    text-align: center;
+    color: wheat;
+} 
+
+.perfil .social-links i {
+    font-size: 18px;
+    display: inline-block;
+    background: transparent;
+    color: var(--texto-claro);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 5px 0px var(--sombra-clara);
+}
+
+.perfil .social-links a:hover,.social-links i:hover {
+    font-size: 18px;
+    display: inline-block;
+    background: white;
+    color: black;
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0px 0px 5px 0px var(--sombra-clara);
+}
