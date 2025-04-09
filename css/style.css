@@ -1,45 +1,28 @@
 /* variavel para as cores */
 
 :root {
+    --background-color: rgba(39, 39, 39, 0.9); /* Fundo escuro suave */
 
-    --background-color: #fff0d3;
-    /* Papaya Whip - Fundo suave e agradável */
+    --fundo-menu-lateral: #19191a; /* Preto acinzentado para contraste */
+    --fundo-claro: #c9b977; /* Dourado suave para equilíbrio */
+    --fundo-escuro: #373739; /* Cinza escuro refinado */
 
-    --fundo-menu-lateral: #001b2e;
-    /* Oxford Blue - Fundo do menu para contraste */
-    --fundo-claro: #adb6c5;
-    /* French Gray - Fundo claro para leveza */
-    --fundo-escuro: #294c60;
-    /* Charcoal - Fundo escuro para equilíbrio */
+    --borda-clara: #ecdda2; /* Dourado claro para detalhes elegantes */
+    --borda-escura: #c9b977; /* Bege dourado para realce */
 
-    --borda-clara: #ffc49c;
-    /* Peach - Toque aconchegante */
-    --borda-escura: #294c60;
-    /* Charcoal - Para contraste sutil */
-
-    --texto-escuro: #001b2e;
-    /* Oxford Blue - Para textos escuros legíveis */
-    --texto-claro: #294c60;
-    /* Charcoal - Para textos médios */
+    --texto-escuro: #020202; /* Preto absoluto para maior contraste */
+    --texto-claro: #ecdda2; /* Bege claro para boa legibilidade */
     --texto-branco: #ffffff;
-    /* Branco puro para destaque */
-    --texto-hover: #ffc49c;
-    /* Peach - Para realces suaves */
-    --texto-opaco: #adb6c5;
-    /* French Gray - Para detalhes mais sutis */
+    --texto-hover: #c9b977; /* Dourado suave para efeito hover */
+    --texto-opaco: #737373; /* Cinza médio para texto secundário */
 
-    --cor-detalhes: #ffc49c;
-    /* Peach - Destaques amigáveis */
+    --cor-detalhes: #c9b977; /* Dourado elegante para elementos decorativos */
 
-    --texto-titulo-claro: #294c60;
-    /* Charcoal - Para títulos acessíveis */
-    --texto-titulo-escuro: #001b2e;
-    /* Oxford Blue - Para forte contraste */
+    --texto-titulo-claro: #ecdda2; /* Bege claro para títulos chamativos */
+    --texto-titulo-escuro: #373739; /* Cinza escuro para profundidade */
 
-    --sombra-clara: rgba(255, 192, 156, 0.3);
-    /* Peach com transparência */
-    --sombra-escura: rgba(41, 76, 96, 0.3);
-    /* Charcoal com transparência */
+    --sombra-clara: rgba(236, 221, 162, 0.4); /* Sombra dourada suave */
+    --sombra-escura: rgba(25, 25, 26, 0.6); /* Sombra escura para contraste */
 }
 
 /* CSS Geral */
@@ -81,6 +64,7 @@ body {
     color: wheat;
 }
 
+/* Redes Sociais */
 .perfil .social-links i {
     font-size: 18px;
     display: inline-block;
@@ -130,6 +114,28 @@ body {
     cursor: pointer;
 }
 
+
+a {
+    text-decoration: none;
+}
+.mobile-nav-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 99999;
+    border: 0;
+    font-size: 26px;
+    transition: all 0.4s;
+    background: var(--cor-detalhes);
+    color: var(--texto-claro);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    cursor: pointer;
+}
 
 .mobile-nav-active {
     overflow: hidden;
@@ -197,6 +203,54 @@ body {
     color: var(--cor-detalhes);
 }
 
-a {
-    text-decoration: none;
+
+/* HERO */
+#hero {
+    width: 100%;
+    height: 100vh; /* view Port Heigth */
+    background: url("../img/bg-hero.png");
+    /* Criar img na I.A */
+    background-size: cover;
+    position: relative;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    background-color: #737373;
+}
+
+#hero .hero-container{
+    z-index: 3;
+    position: relative;
+    min-width: 300px;
+    background:var(--background-color);
+}
+
+#hero h2 {
+    margin: 0;
+    font-size: 100px;
+    font-weight: 600px;
+    line-height: 1px;
+    color: var(--texto-claro) #ecdda2;
+}
+#hero p {
+    color: var(--texto-branco);
+    margin-bottom: 50px;
+    font-size: 26px;
+}
+#hero p span {
+    color:var(--texto-claro) #373739; 
+    padding-bottom: 4px;
+    letter-spacing: 2px;
+    border-bottom: 3px solid var() hsl(240, 70%, 67%);
+}
+
+/* estrutura base - Corpo */
+
+#head h1 { 
+    color: var(--texto-escuro) 
+    text-align: center;
 }

@@ -41,9 +41,19 @@ on('click', '.mobili-nav-toggle', function() {
     this.classList.toggle('bi-x')
 })
 
+// Efeito Digitação
+const type = select('.typed');
+
+if(typed){
+  let typed_strings = typed.getAttibute('data-typed-items')
+  typed_strings = typed_strings.split(',')
+  
+  new Typed ('.typed', {
+    Strings:typed_strings
+ });
 
 
-
+}
 
 
 
