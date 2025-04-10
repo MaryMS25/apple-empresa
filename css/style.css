@@ -94,6 +94,10 @@ body {
     box-shadow: 0px 0px 5px 0px var(--sombra-clara);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Menu mobile */
 .mobile-nav-toggle {
     position: fixed;
@@ -114,10 +118,6 @@ body {
     cursor: pointer;
 }
 
-
-a {
-    text-decoration: none;
-}
 .mobile-nav-toggle {
     position: fixed;
     top: 15px;
@@ -152,6 +152,14 @@ a {
     #header {
         left: -300px;
     }
+    #main {
+        margin-left: 0;
+    }
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
 }
 
 /* Menu do Header */ 
@@ -219,14 +227,13 @@ a {
     position: absolute;
     z-index: 2;
     inset: 0;
-    background-color: #737373;
+    background-color: #73737312;
 }
 
 #hero .hero-container{
     z-index: 3;
     position: relative;
-    min-width: 300px;
-    background:var(--background-color);
+    min-width: 250px;
 }
 
 #hero h2 {
@@ -234,23 +241,33 @@ a {
     font-size: 100px;
     font-weight: 600px;
     line-height: 1px;
-    color: var(--texto-claro) #ecdda2;
+    color: var(--texto-claro);
 }
 #hero p {
     color: var(--texto-branco);
+    margin-top: 15px;
     margin-bottom: 50px;
     font-size: 26px;
 }
 #hero p span {
-    color:var(--texto-claro) #373739; 
+    color:var(--texto-claro); 
     padding-bottom: 4px;
     letter-spacing: 2px;
-    border-bottom: 3px solid var() hsl(240, 70%, 67%);
+    border-bottom: 3px solid #737373;
 }
 
 /* estrutura base - Corpo */
 
+#main {
+    margin-left: 300px;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 #head h1 { 
-    color: var(--texto-escuro) 
+    color: var(--texto-escuro);
     text-align: center;
 }
