@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 /* variavel para as cores */
 
 :root {
@@ -27,8 +29,8 @@
 
 /* CSS Geral */
 body {
-    font-family: "Roboto", sans-serif;
-    color: var(--texto-claro);
+    font-family: "Josefin Sans", sans-serif;
+    color: #1f1f20;
     background: var(--fundo-escuro);
 }
 
@@ -243,18 +245,46 @@ a {
     line-height: 1px;
     color: var(--texto-claro);
 }
+
 #hero p {
     color: var(--texto-branco);
     margin-top: 15px;
     margin-bottom: 50px;
     font-size: 26px;
 }
+
 #hero p span {
     color:var(--texto-claro); 
     padding-bottom: 4px;
     letter-spacing: 2px;
-    border-bottom: 3px solid #737373;
+    border-bottom: 3px solid var(--texto-escuro);
 }
+
+@media (min-width:1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (min-width:1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 90px;
+        line-height: 1;
+        margin-bottom: 45px;
+    }
+    #hero p {
+        font-size: 28px;
+    }
+}
+
+
+
 
 /* estrutura base - Corpo */
 
@@ -268,10 +298,10 @@ a {
 }
 
 /* Seções e Titulos */
-section{
+section {
     padding: 60px 0;
     overflow: hidden;
-    background: #edbdac;
+    background:#bb9c76;
       /* background:var(--section-clara); */
 }
 
@@ -297,5 +327,30 @@ section{
 }
 
 .section-title h2::after {
-
+    content: "";
+    position: absolute;
+    background: #46281f;
+    width: 50px;
+    height: 3px;
+    display: block;
+    bottom: 0;
+    left: 0;
 }
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/* Sobre */
+.sobre.content h3 {
+    color: #4a2e24;
+    font-weight: 700px;
+    font-size: 26px;
+    font-family: "Roboto Slab", serif;
+}
+
+.sobre.content ul {
+    list-style: none;
+    padding: 0;
+}
+
