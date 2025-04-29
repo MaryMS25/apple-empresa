@@ -50,14 +50,14 @@
       new Typed('.typed', {
         strings: typed_strings,
         loop:true, //deixa a palavra em loop
-        typeSpead: 100, //velocidade digitação
-        backSpead: 50, //velocidade em apagar
+        typeSpeed: 100, //velocidade digitação
+        backSpeed: 50, //velocidade em apagar
         backDelay: 2000, //tempo de espera  
       });
 
   }
 
-
+    new PureCounter();
 
 
 })()
