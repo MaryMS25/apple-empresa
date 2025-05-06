@@ -68,7 +68,7 @@
             element: skilsContent,
             offset: '80%', //janela de visualização
             handler: function(direction) {
-                let progress = select('.progess .progess-bar', true);
+                let progress = select('.progress .progress-bar', true);
                 progress.forEach((el) => {
                     el.style.width = el.getAttribute('aria-valuenow') + '%'
                 });
