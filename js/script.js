@@ -103,6 +103,8 @@
         }
     });
 
-
+    const portfolioLighbox = GLightbox ({
+        selector: '.portfolio-lightbox'
+    });
 
 })()
